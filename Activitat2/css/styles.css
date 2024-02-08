@@ -1,0 +1,184 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+#menu {
+    width: 100%;
+    background-color: black;
+    display: flex;  
+    position: fixed;
+    height: 50px;
+    align-items: flex-end;
+    flex-direction:row-reverse;
+}
+
+
+.menumenu {
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    transform: translateY(-50%);
+    padding-right: 20px;
+}
+.menumenu:hover {
+    opacity: 0.8;
+    border: 2px solid #fff; /* Border en hover */
+}
+
+.menumenu a {
+    text-decoration: none;
+    color: #fff; /* Set the default link color */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+}
+
+#head {
+    padding-top: 50px;
+    background-image: url("../img/font.avif");
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%; /* 100% of the parent's width */
+    background-size: cover; /* or "contain" depending on your needs */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+
+}
+#sobre{
+    width: 30%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40px;
+    color: #fff;
+}    
+
+#con{
+    margin: 15%;
+    margin-top: 40px;
+}
+
+#ca{
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
+.nosaltres{
+    display: flex;
+}
+
+div p{
+    padding: 15px;;
+}
+
+div h1{
+    padding: 10px;
+}
+div img{
+    padding: 15px;
+}
+
+.menus{
+    display: flex;
+    
+}
+.menu{
+    width: 100%;
+    text-align: center;
+    padding-top: 15%;    
+    margin: 15px;
+    border: 1px solid;
+    margin-left: 0px;
+}
+#cartamenu{
+    background-color: rgb(3, 3, 47);
+    text-align: center;
+    color: #fff;
+}
+
+
+img.cartaimg{
+    width: 45%;
+}
+
+.carta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+
+
+
+
+#hga {
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.foto {
+    position: relative;
+    margin: 8px;
+    overflow: hidden;
+    width: 20%;
+}
+
+.foto1 {
+    position: relative;
+    margin: 8px;
+    overflow: hidden;
+    width: 20%;
+    transition: opacity 0.3s ease, border 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(50%);
+}
+
+.foto1:hover{
+    opacity: 0.7;
+    border: 2px solid #fff; /* Border en hover */
+}
+
+
+
+
+
+
+/* Media query para pantallas medianas (hasta 800px) */
+@media only screen and (max-width: 800px) {
+    .nosaltres {
+        flex-direction: column; /* Cambia a una sola columna */
+    }
+    img.cartaimg {
+        width: 100%;
+    }
+    .foto{
+        width: 38%;
+        z-index: -1;
+    }
+    .foto1{
+        width: 38%;
+        z-index: -1;
+    }
+}
+
+/* Media query para pantallas pequeñas (hasta 600px) */
+@media only screen and (max-width: 600px) {
+    .nosaltres {
+        flex-direction: column; /* Cambia a una sola columna */
+    }
+    .menus {
+        flex-direction: column; /* Cambia a una sola columna */
+    }
+    .cartaimg {
+        width: 100%;
+    }
+    .foto{
+        width: 100%;
+        z-index: -1;
+    }
+    .foto1{
+        width: 100%;
+        z-index: -1;
+    }
+    #cartamenu{
+        display: none;
+    }
+}
