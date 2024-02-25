@@ -52,14 +52,19 @@ section {
 }
 */
 
+/*Exi:8
 section {
     display: grid;
-    grid-template-columns: 250px 1fr 2fr 20%;
-    grid-template-rows: auto 300px auto; /* Alçada de 300px per a la segona fila */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px 10px;
 }
+*/
 
-
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 10px;
+}
 
 .elem {
     background-color: #3498db;
@@ -78,10 +83,53 @@ section {
 
  
 
+/*Exi:6*/
+.el1x{
+    grid-column-start: 1;  /* Inicia a la primera columna */
+    grid-column-end: span 2;  /* Ocupa dues columnes */
+}
+
+/*Exi:7*/
+.el2x{
+    grid-column: span 2; /* Element 2 occupies two columns */
+    grid-row: span 2; 
+}
+
+/*Exi:9*/
+.el4x{
+    grid-column-start: 1;  /* Inicia a la primera columna */
+    grid-column-end: span 4;  /* Ocupa dues columnes */
+}
+
+/*Exi:10*/
+.el3x{
+    grid-row: span 3; 
+}
+
+/*Exi:11
+.el7x{
+    grid-row-start: 1; 
+    grid-row-end: span 2; 
+}
+
+.el8x{
+    grid-column-start: 1; 
+    grid-column-end: 2;  
+}*/
+
+
+/*Exi:12*/
+.el7x{
+    grid-row: span 2; 
+}
+
+.el8x{
+    grid-column: span 2; 
+}
 
 
 
- .el1{
+.el1{
     background-color:  #93A603;
 
  }
@@ -89,6 +137,7 @@ section {
  
  .el2 {
     background-color:  #0A89A6;
+
  }
  
  

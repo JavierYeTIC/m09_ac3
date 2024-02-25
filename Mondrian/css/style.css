@@ -1,0 +1,175 @@
+#caixa{
+    height: 250px;
+    width: 250px;
+}
+
+  
+.elem{
+    border: 3px solid;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 25px;
+    grid-template-rows: repeat(2, 100px);
+}
+
+.el1{
+    background-color: white;
+}
+.el2{
+    background-color: red;
+    grid-row: span 2; 
+    grid-column: span 3; 
+}
+.el3{
+    background-color: white;
+    
+}
+.el4{
+    background-color: blue;
+    grid-row: span 2;
+}
+.el5{
+    background-color: white;
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+.el6{
+    background-color: white;
+    grid-row: span 1;
+}
+.el7{
+    background-color: yellow;
+    grid-row: span 1;
+}
+
+
+
+#migpun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+
+  .square {
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    position: relative;
+    transform-origin: center;
+    z-index: 1;
+    /*border:3px solid;*/
+  }
+
+  .diamond {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(221, 216, 216);
+    position: absolute;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Tres filas iguales */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    overflow: hidden;
+
+  }
+
+
+
+.el11 { background-color: rgb(221, 216, 216);
+    transform: rotate(45deg);
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: -53px;
+    margin-left: -14px;
+}
+
+
+.el22 { background-color: rgb(221, 216, 216); 
+    transform: rotate(45deg);
+    height: 100px;
+    width: 145px;
+    margin: 0px;
+    margin-top: 80px;
+    margin-left: 0px;
+    position: absolute;
+}
+.el44 { 
+    background-color: rgb(221, 216, 216);
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: -50px;
+    margin-left: 110px;
+}
+.el55 { 
+    background-color: yellow;
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 185px;
+    margin-left: 100px;
+}
+
+  .el33 { background-color: rgb(221, 216, 216);
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 70px;
+    margin-left: 110px;
+     }
+  .el66{
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(221, 216, 216);
+  }
+
+  .el77 { 
+    background-color: black;
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 130px;
+    margin-left: 170px;
+}
+.el88 { 
+    background-color: blue;
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 175px;
+}
+.el99 { 
+    background-color: red;
+    position: absolute;
+    transform: rotate(45deg);
+    height: 85px;
+    width: 85px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: -65px;
+}
