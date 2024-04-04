@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#dd {
+    display: flex;  
+    position: fixed;
+    padding-top: 50px;
+    margin-top: 50px;
+    right: 0;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+#menu {
+    width: 100%;
+    background-color: rgb(6, 6, 181);
+    display: flex;  
+    position: fixed;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+
+.menumenu {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+    border: 1px solid black;
+    border-top: 2px solid red;
+    margin-bottom: -20px;
+}
+
+.menumenu:hover {
+    opacity: 0.8;
+    border-top: 2px solid orangered;
+}
+
+.menumenu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 35px;
+    margin: 10px;
+}
+#Spotlight{
+    padding-top: 120px;
+    border: 1px solid black;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+
+#genera{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+.div{
+    display: flex;
+    border-top: 5px solid red;
+}
+.divs{
+    display: flex;
+    border-top: 5px solid red;
+    margin-right: 5px;
+}
+.divs img{
+    width: 30%;
+    height: 50%;
+    padding-right: 10px;
+}
+.sobreimg{
+    width: 100%;
+}
+#abaix{
+    display: flex;
+}
+#ex{
+    width: 100%;
+}
+.hh{
+    width: 100%;
+}
+
+.hha{
+    width: 70%;
+}
+@media only screen and (max-width: 800px) {
+    #genera {
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+    }
+    
+
+    
+}
