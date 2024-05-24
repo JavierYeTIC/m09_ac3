@@ -4,118 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id = "menu" >
-        <div class = "menumenu">
+    <div id="menu">
+        <div class="menumenu">
             <a href="">Nosaltres</a>
         </div>
-        <div class = "menumenu">
+        <div class="menumenu">
             <a href="">Carta</a>
         </div>
-        <div class = "menumenu">
+        <div class="menumenu">
             <a href="">Galeria</a>
         </div>
     </div>
-    <div id = "head" style="height: 500px;">
-        <div id = "sobre">
-            <h1>Restaurante coberts</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsam itaque ab dolores dolore voluptas 
-                earum officiis labore debitis nostrum et molestiae, placeat quisquam beatae velit illo eos sunt rem.</p>
+    <div id="head" style="height: 500px;">
+        <div id="sobre">
+            <h1>Restaurante Coberts</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsam itaque ab dolores dolore voluptas earum officiis labore debitis nostrum et molestiae, placeat quisquam beatae velit illo eos sunt rem.</p>
         </div>
     </div>
     <div id="con">
-    <div>
-        <div><h1 id ="ss">Sobre nosaltres</h1></div>
-        <div class = "nosaltres">
-            <img src="/img/sobre.jpeg" class="sobreimg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur!
-                 Assumenda, suscipit quos? Placeat?
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                 accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                 , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                 accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                 , dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
-        </div>
-        <div class = "nosaltres">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                , dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
-                <img src="/img/sobre.jpeg" class="sobreimg">
-        </div>
-    </div>
-    <div id = "carta">
-        <h1 id = "ca">Carta</h1>
-        <div id = "cartamenu"><h1>Menu</h1></div>
-        <div class = "menus">
-            <div class = "menu">
-                <p><b>Menu 1</b></p>
+        <div>
+            <div><h1 id="ss">Sobre nosaltres</h1></div>
+            <div class="nosaltres">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/sobre_opt3.jpeg">
+                    <source media="(max-width: 768px)" srcset="img/sobre_opt2.jpeg">
+                    <img src="/img/sobre.jpeg" class="sobreimg" alt="Capçalera del restaurant" >
+                </picture>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
             </div>
-            <div class="cartatext">
-                <h1 >Contigut</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
-                     <div calss = "imgcarta">
-                        <img src="img/sobre.jpeg" class = "cartaimg">
-                        <img src="img/sobre.jpeg" class = "cartaimg">
+        </div>
+        <div id="carta">
+            <h1 id="ca">Carta</h1>
+            <div id="cartamenu"><h1>Menu</h1></div>
+            <div class="menus">
+                <div class="menu">
+                    <p><b>Menu 1</b></p>
+                </div>
+                <div class="cartatext">
+                    <h1>Contigut</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
+                    <div class="imgcarta">
+                        <img src="img/sobre.jpeg" class="cartaimg">
+                        <img src="img/sobre.jpeg" class="cartaimg">
                     </div>
-            </div>
-            
-        </div>
-        <div class = "menus">
-            <div class = "menu">
-                <p>Menu 2</p>
-            </div>
-            <div class="cartatext">
-                <h1>Contigut</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda 
-                    accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat
-                    , dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
-                <div calss = "imgcarta">
-                    <img src="img/sobre.jpeg" class = "cartaimg">
-                    <img src="img/sobre.jpeg" class = "cartaimg">
                 </div>
             </div>
-            
+            <div class="menus">
+                <div class="menu">
+                    <p>Menu 2</p>
+                </div>
+                <div class="cartatext">
+                    <h1>Contigut</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt distinctio at animi assumenda accusamus corporis fugit illum minima perferendis doloremque totam laborum quaerat, dolores consectetur! Assumenda, suscipit quos? Placeat?</p>
+                    <div class="imgcarta">
+                        <img src="img/sobre.jpeg" class="cartaimg">
+                        <img src="img/sobre.jpeg" class="cartaimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="grid">
+            <h1 id="hga">Galeria d'imatges</h1>
+            <div>
+                <img src="img/sobre_opt2.jpeg" alt="Imatge 1" class="foto1">
+                <img src="img/sobre_opt2.jpeg" alt="Imatge 2" class="foto">
+                <img src="img/sobre_opt2.jpeg" alt="Imatge 3" class="foto">
+                <img src="img/sobre_opt2.jpeg" alt="Imatge 4" class="foto1">
+            </div>
+            <div>
+                <img src="img/sobre.jpeg" alt="Imatge 5" class="foto1">
+                <img src="img/sobre.jpeg" alt="Imatge 6" class="foto">
+                <img src="img/sobre.jpeg" alt="Imatge 7" class="foto">
+                <img src="img/sobre.jpeg" alt="Imatge 8" class="foto1">
+            </div>
         </div>
     </div>
-    <div id = "grid">
-    <h1 id = "hga">Galeria d'imatges</h1>
-        <div>
-            <img src="img/sobre.jpeg" alt="Imatge 1" class="foto1">
-            <img src="img/sobre.jpeg" alt="Imatge 2" class="foto">
-            <img src="img/sobre.jpeg" alt="Imatge 3" class="foto">
-            <img src="img/sobre.jpeg" alt="Imatge 4" class="foto1">
-        </div>
-        <div>
-            <img src="img/sobre.jpeg" alt="Imatge 5" class="foto1">
-            <img src="img/sobre.jpeg" alt="Imatge 6" class="foto">
-            <img src="img/sobre.jpeg" alt="Imatge 7" class="foto">
-            <img src="img/sobre.jpeg" alt="Imatge 8" class="foto1">
-        </div>
-    </div>
-</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#ss").click(function() {
+                $(".nosaltres").slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>
