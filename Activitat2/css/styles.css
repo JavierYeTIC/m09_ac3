@@ -282,3 +282,71 @@ img.cartaimg{
         color: white;
     }
 }
+
+
+#video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#restaurant-video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+.video-section {
+    position: relative; /* Permite posicionar elementos dentro de esta sección */
+    text-align: center;
+  }
+  
+  .video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .control-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #play-pause-button {
+    background-image: url('./img/play.png');
+  }
+  
+  #mute-button {
+    background-image: url('./img/volumeOff.png');
+  }

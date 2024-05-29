@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant Coberts</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+
     <div id="menu">
         <div class="menumenu">
             <a href="">Nosaltres</a>
@@ -84,12 +85,93 @@
         </div>
     </div>
 
+
+    <div id="video-section" style="text-align: center;">
+        <h2>Vídeo del Restaurant</h2>
+        <section class="video-section">
+            <video id="myVideo" loop class="responsive-video">
+              <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-controls">
+              <button id="play-pause-button" class="control-button"></button>
+              <button id="mute-button" class="control-button"></button>
+            </div>
+          </section>
+    </div>
+    
+
     <script>
         $(document).ready(function() {
             $("#ss").click(function() {
                 $(".nosaltres").slideToggle();
             });
         });
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('myVideo');
+      var playPauseButton = document.getElementById('play-pause-button');
+      var muteButton = document.getElementById('mute-button');
+  
+      // Inicializar el estado del vídeo y los botones
+      video.muted = true;
+      video.pause();
+      playPauseButton.style.backgroundImage = 'url("./img/play.png")';
+      muteButton.style.backgroundImage = 'url("./img/volumeOff.png")';
+  
+      playPauseButton.addEventListener('click', function() {
+        if (video.paused) {
+          video.play();
+          playPauseButton.style.backgroundImage = 'url("img/pause.png")';
+        } else {
+          video.pause();
+          playPauseButton.style.backgroundImage = 'url("./img/play.png")';
+        }
+      });
+  
+      muteButton.addEventListener('click', function() {
+        if (video.muted) {
+          video.muted = false;
+          muteButton.style.backgroundImage = 'url("./img/volumeUp.png")';
+        } else {
+          video.muted = true;
+          muteButton.style.backgroundImage = 'url("./img/volumeOff.png")';
+        }
+      });
+  
+      // Función para reproducir el video automáticamente cuando aparece en pantalla
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            video.play();
+            playPauseButton.style.backgroundImage = 'url("./img/pause.png")';
+          } else {
+            video.pause();
+            playPauseButton.style.backgroundImage = 'url("./img/play.png")';
+          }
+        });
+      }, { threshold: 0.5 });
+  
+      observer.observe(video);
+    });
+
+        window.onscroll = function() {
+        const navbar = document.getElementById('menu');
+        }
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollIcon = document.getElementById('scroll-icon');
+
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.pageYOffset;
+                // Rotació i escalatge de l'icona segons la posició de l'scroll
+                scrollIcon.style.transform = `rotate(${scrollPosition}deg) scale(${1 + scrollPosition/1000})`;
+            });
+        });
+
     </script>
 </body>
 </html>
