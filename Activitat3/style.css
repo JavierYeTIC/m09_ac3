@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background: rgb(1, 27, 9);
+    background-image: linear-gradient(to right, black,white);
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center; /* Cambio align-self por align-items */
+}
+
+.foto {
+    margin: 1rem 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Añadido align-items */
+    height: 12rem;
+    width: 21rem;
+    
+}
+
+.foto img {
+    margin-top: 0.2rem;
+    border: 0.3rem solid #99ccff; /* Cambio de color */
+    height: 90%;
+    border-radius: 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    background-color: #678e96; /* Cambio de color */
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    text-align: center;
+    color: rgb(255, 255, 255); /* Cambio de color */
+}
+
+.btns {
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Añadido align-items */
+    cursor: pointer;
+}
+
+.play-btn {
+    font-size: 3rem;
+}
+
+.time-btn {
+    font-size: 2rem;
+}
+
+.foto img.rotating {
+    animation-play-state: paused;
+    animation: rotation 2s infinite linear;
+}
+
+.controls {
+    margin: 0px 0.5rem 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid rgb(0, 204, 255); /* Cambio de color */
+    border-radius: 0.5rem;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

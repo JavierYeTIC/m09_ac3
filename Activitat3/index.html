@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>musica</title>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="foto">
+            <img src="" id="cover"/>
+        </div>
+
+        <div class="card-body">
+
+            <h2 id="songName"></h2>
+
+            <h3 id="artist"></h3>
+
+            <h4 id="duration">0:00</h4>
+
+            <div class="controls">
+
+                <div class="btns">
+                    <span class="material-symbols-outlined time-btn" id="previousBtn"> skip_previous </span>
+                    <span class="material-symbols-outlined play-btn" id="playBtn"> play_circle </span>
+                    <span class="material-symbols-outlined time-btn" id="nextBtn"> skip_next </span>
+                </div>
+
+                <div class="soundbar">
+                    <span class="material-symbols-outlined"> volume_down </span>
+                    <input type="range" name="" id="volumeRange" min="0" max="100">
+                    <span class="material-symbols-outlined"> volume_up </span>
+                </div>
+
+                <div class="volume" id="volumeDisplay">50</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "天外来物",
+        "artist": "薛之谦",
+        "path": "audios/天外来物.mp3",
+        "duration": "4:17",
+        "img": "img/天外来物.jpg"
+    },
+    {
+        "name": "My eyes",
+        "artist": "Travis Scott",
+        "path": "audios/MY EYES.mp3",
+        "duration": "4:12",
+        "img": "img/MY EYES.jpg"
+    },
+    {
+        "name": "演员",
+        "artist": "薛之谦",
+        "path": "audios/演员.mp3",
+        "duration": "4:33",
+        "img": "img/演员.jpg"
+    }
+]
